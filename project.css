@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+form {
+    background: linear-gradient(rgb(240, 84, 167), rgb(61, 52, 52));
+    padding: 29px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Hewi', sans-serif;
+    color: #58e3db;
+}
+
+input::placeholder,
+option {
+    color: rgb(200, 200, 200);
+    /* Change the color of the placeholder text */
+    font-style: italic;
+    /* Optional: Make it italic */
+}
+
+form>input,
+select {
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 9px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 2px solid rgb(17, 16, 16);
+}
+
+.error {
+    border-bottom: 4px solid rgb(249, 5, 5);
+}
+
+.pass {
+    border-bottom: 4px solid rgb(29, 249, 5);
+}
+
+
+input:focus {
+    border-bottom: 2px solid blue;
+
+
+}
+
+#Registration {
+    color: rgb(59, 160, 210);
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+form>label {
+    display: block;
+    align-items: center;
+}
+
+button {
+    padding: 12px;
+    background-color: aqua;
+    border-radius: 59px;
+    margin: 11px;
+    width: 114px;
+    font-size: 14px;
+    font-weight: bolder;
+   cursor: pointer;
+}
+
+.image {
+    width: 22px;
+    height: 22px;
+}
+
+.inputimage {
+    position: relative;
+    padding-left: 30px;
+    background-image: url('/images/cross.png');
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 20px;
+}
+.inputyes{
+    background-image: url('/images/yes.png');
+}
+
+.input-image {
+    position: relative;
+    padding-left: 14px;
+    /* background-image: url(cross.png); */
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 20px;
+    right: 7px;
+    display: none;
+}
+#login{
+    font-weight: 900;
+    text-decoration: none;
+    color:#0ac9dd;
+}
+
+#Ragistration{
+    text-decoration: none;
+    color: aqua;
+    margin: 7px;
+}
+#login2{
+   margin-bottom:30px;
+}

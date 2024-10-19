@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <form  id="myform" onsubmit="lsubmit(event)">
+        <h1>Login Form</h1>
+        <label for="username">Full UserName</label>
+        <input type="text" name="username" class="username " placeholder="Enter your UserName" onblur="ucheck()"
+            required>
+          <br>
+          <br>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="pass" placeholder="Enter Password" onblur="pcheck()" minlength="8"
+              maxlength="20" required>  
+          <button type="submit" id="login2" onsubmit="lsubmit()">Log In</button>   
+          <br> 
+          <a id="Ragistration" href="reset.html">Lost your Password</a>
+          
+          <a id="Ragistration" href="project.html">Don't have an account</a>
+    </form>
+    <script src="project.js"></script>
+</body>
+</html>

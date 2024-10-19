@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hewi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <form id="myform" onsubmit="osubmit(event)">
+        <h1 id="Registration">Registration Form</h1>
+
+        <label for="username">Full UserName</label>
+        <input type="text" name="username" class="username " placeholder="Enter your UserName" onblur="ucheck()"
+            required>
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email ID" onblur="gcheck()" required>
+        <br>
+
+
+        <div>
+            <label for="gender" id="mySelect">Gender:</label>
+            Male <input type="radio" id="male" name="gender" value="Male" required onmouseleave="ocheck()" onblur="ocheck()" onchange="ocheck()">
+            Female <input type="radio" id="female" name="gender" value="Female" required onmouseleave="ocheck()" onblur="ocheck()" onchange="ocheck()">
+            Other <input type="radio" id="other" name="gender" value="Other" required onmouseleave="ocheck()" onblur="ocheck()" onchange="ocheck()">
+            <img src="/images/cross.png" style="width: 20px;" class="input-image" alt="." />
+        </div>
+        
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass" placeholder="Enter Password" onblur="pcheck()" minlength="8"
+            maxlength="20" required>
+
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" id="cpassword" name="cpass" placeholder="Re-Enter Password" onblur="ccheck()"
+            minlength="8" maxlength="20" required>
+
+        <label for="mnumber">Mobile Number</label>
+        <input type="tel" id="mnumber" placeholder="Enter Mobile Number" name="mpass" onblur="mcheck()"
+            pattern="[0-9]{10}" required>
+
+        <label for="bdate">Date of Birth</label>
+        <input type="date" id="bdate" name="bdate" onmouseleave="dcheck()" onblur="dcheck()" onchange="dcheck()">
+   
+
+        <label for="city">Select City</label>
+        <select name="city" id="city" onblur="scheck()" onchange="scheck()">
+            <option value="" disabled selected>Select</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="A.Nagar">A.Nagar</option>
+        </select>
+        <br>
+
+        <button type="submit" onsubmit="ucheck()">Submit</button>
+        <button type="reset" id="reset" >Reset</button>
+       <br>
+        <a id="login" href="login.html">Log In</a>
+    </form>
+    <script src="project.js"></script>
+</body>
+
+</html>
